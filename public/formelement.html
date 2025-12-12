@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        div{
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">User Registration</h1>
+        <h3>Enter user type</h3>
+        <input type="text" size="30" list="topic">
+        <datalist id="topic">
+            <option>Ceo</option>
+            <option>Manager |</option>
+            <option>Manager ||</option>
+            <option>Manager |||</option>
+            <option>Manager</option>
+            <option>Employee |</option>
+            <option>Employee ||</option>
+            <option>Employee |||</option>
+
+        </datalist>
+        <form>
+            <dl>
+                <dt>Start fillig form</dt>
+                <dd>
+                    <input type="text" autofocus>
+                </dd>
+                <dt>First Name :</dt>
+                <dd>
+                    <input type="text" name="user-name" placeholder="eg. Chandrashekhar">
+                </dd>
+                <dt>Last Name</dt>
+                <dd>
+                    <input type="text" name="last-name" readonly value="Dhote">
+                </dd>
+                <dt>Contry</dt>
+                <dd>
+                    <input type="text" value="India" name="Contry" disabled >
+                </dd>
+                <dt>Age</dt>
+                <dd>
+                    <input type="number" name="age" size="5" min="1" max="120">
+                </dd>
+                <dd>
+                    <input type="number" name="Steps" size="5" min="1" max="120" step="5">
+                </dd>
+                <dt>Enter your current city</dt>
+                <dd>
+                    <input type="text" name="city" required>
+                </dd>
+                <dt>State</dt>
+                <dd>
+                    <input type="text" name="state" pattern="[A-Z]{5}">
+                </dd>
+                <dt>Contact Number</dt>
+                <dd>
+                    <input type="text" name="mobile-no" pattern="[0-9]{10,12}">
+                </dd>
+            </dl>
+            <dt>Password</dt>
+            <dd>
+                <input type="password" name="password" minlength="4" maxlength="8">
+            </dd>
+            <dt>Number Range </dt>
+            <dd>
+                <input type="range" min="15" max="200">
+            </dd>
+            <dt>Date Of Birth</dt>
+            <dd>
+                <input type="date" min="2025-11-01" max="2025-11-25" value="2025-11-21">
+            </dd>
+            <dt>Date Of Birth time</dt>
+            <dd>
+                <input type="datetime-local" min="2025-11-01" max="2025-11-25">
+            </dd>
+            <dt>Date Of Birth month</dt>
+            <dd>
+                <input type="month" >
+            </dd>
+            <dt>Date Of Birth month</dt>
+            <dd>
+                <input type="week" >
+            </dd>
+            <dt>Email</dt>
+            <dd>
+                <input type="email" name="mail" >
+            </dd>
+            <dt>Upload Your Resume</dt>
+            <dd>
+                <input type="file" name="resume" multiple>
+            </dd>
+            <dt>Website</dt>
+            <dd>
+                <input type="url" name="Website">
+            </dd>
+            <button>Register</button>
+        </form>
+    </div>
+</body>
+</html>
