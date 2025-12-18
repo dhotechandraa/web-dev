@@ -94,11 +94,74 @@
             </dd>
             <dt>Upload Your Resume</dt>
             <dd>
-                <input type="file" name="resume" multiple>
+                <input type="file" name="resume" multiple accept=".jpeg,.png,.docs">
             </dd>
             <dt>Website</dt>
             <dd>
                 <input type="url" name="Website">
+            </dd>
+            <dt>Choose Color</dt>
+            <dd>
+                <input type="color" value="#ff00ff">
+            </dd>
+            <dt>Select Gender</dt>
+            <dd>
+                <input type="radio" name="gender" checked value="male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="gender"> Transgender
+            </dd>
+            <dt>Choose Department</dt>
+            <dd>
+                <input type="checkbox" name="department" value="eee" checked> EEE
+                <input type="checkbox" name="department" value="cse"> CSE
+                <input type="checkbox" name="department" value="cve"> CVE
+                <input type="checkbox" name="department" value="ece" checked> ECE
+                <input type="checkbox" name="department" value="mee"> MEE
+            </dd>
+
+            <dt>Choose Location</dt>
+            <dd>
+                <select name="Location" id="">
+                    <option value="hyd">Hyderabad</option>
+                    <option value="dl">Delhi</option>
+                    <option value="pune" selected>Pune</option>
+                    <option value="bl">Bengluru</option>
+                    <option value="mb" disabled>Mubmai</option>
+                </select>
+            </dd>
+            <dt>Shopping</dt>
+            <dd>
+                <select name="Shopping" id="">
+                    <optgroup label="Electronics">
+                        <option value="tv">Samsung TV</option>
+                        <option value="dl">Nothing phone</option>
+                    </optgroup>
+                   <optgroup label="Footwear">
+                        <option value="ns" >Nike Shoe</option>
+                        <option value="ps">Puma sleeper</option>
+                   </optgroup>
+                    <optgroup label="Clothing">
+                        <option value="cs" >Casual Shirts</option>
+                        <option value="short">Shorts</option>
+                    </optgroup>
+                </select>
+            </dd>
+             <dt>Shopping (Select Multiple)</dt>
+            <dd>
+                <select name="Shopping" id="" size="3" multiple>
+                    <optgroup label="Electronics">
+                        <option value="tv">Samsung TV</option>
+                        <option value="dl">Nothing phone</option>
+                    </optgroup>
+                   <optgroup label="Footwear">
+                        <option value="ns" >Nike Shoe</option>
+                        <option value="ps">Puma sleeper</option>
+                   </optgroup>
+                    <optgroup label="Clothing">
+                        <option value="cs" >Casual Shirts</option>
+                        <option value="short">Shorts</option>
+                    </optgroup>
+                </select>
             </dd>
             <button>Register</button>
         </form>
